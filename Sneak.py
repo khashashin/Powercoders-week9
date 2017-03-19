@@ -6,6 +6,7 @@ WIDTH = 800
 HEIGHT = 600
 SEG_SIZE = 20
 IN_GAME = True
+SEG_SIZE2 = 15
 
 
 # Helper functions
@@ -15,7 +16,7 @@ def create_block():
     posx = SEG_SIZE * random.randint(1, (WIDTH-SEG_SIZE) / SEG_SIZE)
     posy = SEG_SIZE * random.randint(1, (HEIGHT-SEG_SIZE) / SEG_SIZE)
     BLOCK = c.create_oval(posx, posy,
-                          posx+SEG_SIZE, posy+SEG_SIZE,
+                          posx+SEG_SIZE2, posy+SEG_SIZE2,
                           fill="red")
 
 
